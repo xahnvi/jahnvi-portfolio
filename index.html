@@ -645,8 +645,7 @@
 
   .project-1 { grid-column: span 8; }
   .project-2 { grid-column: span 4; aspect-ratio: 9 / 16; }
-  .project-3 { grid-column: span 4; aspect-ratio: 9 / 16; }
-  .project-4 { grid-column: span 8; }
+  .project-3 { grid-column: span 12; }
 
   .project-bg {
     position: absolute;
@@ -670,12 +669,6 @@
     background:
       radial-gradient(circle at 50% 30%, var(--peach) 0%, transparent 65%),
       linear-gradient(180deg, var(--peach-light) 0%, var(--cream) 100%);
-  }
-  .project-4 .project-bg {
-    background:
-      radial-gradient(circle at 20% 80%, var(--peach) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, var(--sky) 0%, transparent 50%),
-      var(--cream);
   }
 
   .project-play {
@@ -1051,7 +1044,7 @@
     }
 
     .work-grid { gap: 1rem; }
-    .project-1, .project-2, .project-3, .project-4 {
+    .project-1, .project-2, .project-3 {
       grid-column: span 12;
       aspect-ratio: 16 / 10;
     }
@@ -1304,19 +1297,7 @@
         </div>
       </div>
 
-      <a href="#" target="_blank" class="project project-4">
-        <div class="project-bg"></div>
-        <img class="project-thumb" src="" alt="" />
-        <span class="project-number">04</span>
-        <span class="project-duration">4:38</span>
-        <div class="project-play">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </div>
-        <div class="project-meta">
-          <h3>The Long Drive Home</h3>
-          <span class="tag">Documentary Cut</span>
-        </div>
-      </a>
+
     </div>
 
   </div>
