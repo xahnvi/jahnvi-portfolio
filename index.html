@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Jahnvi Mittal — Video Editor & Motion Designer</title>
+<title>Jahnvi Mittal — Video Editor & Videographer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -471,6 +471,94 @@
     color: var(--ink-soft);
     margin-top: 0.5rem;
     display: block;
+  }
+
+  /* ===== EXPERIENCE ===== */
+  .experience {
+    padding: 2rem 0 8rem;
+    position: relative;
+  }
+
+  .experience-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .experience-header h2 {
+    font-family: var(--display);
+    font-weight: 300;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    max-width: 700px;
+  }
+
+  .experience-header h2 em {
+    font-style: italic;
+    color: var(--sky-deep);
+  }
+
+  .experience-list {
+    border-top: 1px solid var(--line);
+  }
+
+  .experience-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .experience-role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .experience-role .title {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--ink);
+  }
+
+  .experience-role .org {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  .experience-role .duration {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-whisper);
+    margin-top: 0.5rem;
+  }
+
+  .experience-desc p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    margin-bottom: 1.25rem;
+  }
+
+  .experience-desc p:last-of-type { margin-bottom: 1.5rem; }
+
+  .experience-tags {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .experience-tags span {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+    padding: 0.4rem 0.85rem;
+    border-radius: 100px;
   }
 
   /* ===== WORK ===== */
@@ -979,6 +1067,11 @@
     }
 
     .about-stats { gap: 1rem; }
+
+    .experience-item {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
     .stat .num { font-size: 1.8rem; }
   }
 
@@ -995,6 +1088,7 @@
   <div class="mark">jahnvi.</div>
   <div class="menu">
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#work">Work</a>
     <a href="#tools">Tools</a>
     <a href="#contact">Contact</a>
@@ -1016,7 +1110,7 @@
 
     <div class="hero-meta">
       <p class="hero-tagline">
-        A video editor and motion designer crafting <em>quiet, cinematic</em> stories, one frame at a time.
+        A video editor and videographer crafting <em>quiet, cinematic</em> stories, one frame at a time.
       </p>
       <div class="hero-location">
         Based in India<br />
@@ -1081,11 +1175,68 @@
   </div>
 </section>
 
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="section-label">
+      <span class="num">02</span>
+      <span class="bar"></span>
+      <span>Experience</span>
+    </div>
+
+    <div class="experience-header">
+      <h2>Time spent <em>behind the scenes.</em></h2>
+    </div>
+
+    <div class="experience-list">
+      <div class="experience-item">
+        <div class="experience-role">
+          <span class="title">Video Mastery <em>— Cohort 11</em></span>
+          <span class="org">Aevy</span>
+          <span class="duration">Graduated · 2025</span>
+        </div>
+        <div class="experience-desc">
+          <p>
+            Completed Aevy's Video Mastery Cohort 11, sharpening my editing craft with structured, focused training on storytelling, pacing, and the technical fundamentals of the timeline.
+          </p>
+          <div class="experience-tags">
+            <span>Editing Fundamentals</span>
+            <span>Storytelling</span>
+            <span>Cohort 11</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-role">
+          <span class="title">Social Media Manager <em>— Intern</em></span>
+          <span class="org">An Interior Design Studio</span>
+          <span class="duration">May – July · 2 Months</span>
+        </div>
+        <div class="experience-desc">
+          <p>
+            Shot and edited Reels of the studio's completed projects on site, capturing finished interiors across various locations and turning walkthroughs into short, watchable stories.
+          </p>
+          <p>
+            Kept a steady rhythm of Instagram stories between shoots to keep the page active, and grew the studio's organic reach into real, tangible business enquiries.
+          </p>
+          <div class="experience-tags">
+            <span>Reels</span>
+            <span>Stories</span>
+            <span>On-Site Shoots</span>
+            <span>Organic Growth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ WORK ============ -->
 <section class="work" id="work">
   <div class="container">
     <div class="section-label">
-      <span class="num">02</span>
+      <span class="num">03</span>
       <span class="bar"></span>
       <span>Selected Work</span>
     </div>
@@ -1136,19 +1287,22 @@
         </div>
       </div>
 
-      <a href="#" target="_blank" class="project project-3">
+      <div class="project project-3">
         <div class="project-bg"></div>
-        <img class="project-thumb" src="" alt="" />
+        <iframe
+          class="project-video"
+          src="https://www.youtube.com/embed/kNWmo9vexQI"
+          title="Jahnvi Mittal Instagram Reel"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
         <span class="project-number">03</span>
-        <span class="project-duration">1:02</span>
-        <div class="project-play">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </div>
         <div class="project-meta">
           <h3>Bloom <em>/ Reel</em></h3>
           <span class="tag">Instagram Reel</span>
         </div>
-      </a>
+      </div>
 
       <a href="#" target="_blank" class="project project-4">
         <div class="project-bg"></div>
@@ -1173,7 +1327,7 @@
   <div class="container">
     <div class="tools-header">
       <div class="section-label" style="justify-content: center;">
-        <span class="num">03</span>
+        <span class="num">04</span>
         <span class="bar"></span>
         <span>Tools of the Craft</span>
       </div>
@@ -1189,10 +1343,10 @@
         <span class="tool-cat">Primary Timeline</span>
       </div>
       <div class="tool">
-        <div class="tool-icon">Ae</div>
+        <div class="tool-icon">Dv</div>
         <span class="tool-number">02</span>
-        <span class="tool-name">After Effects</span>
-        <span class="tool-cat">Motion & VFX</span>
+        <span class="tool-name">DaVinci Resolve</span>
+        <span class="tool-cat">Colour Grading</span>
       </div>
       <div class="tool">
         <div class="tool-icon">Fg</div>
@@ -1215,7 +1369,7 @@
   <div class="container">
     <div class="contact-content">
       <div class="section-label" style="justify-content: center;">
-        <span class="num">04</span>
+        <span class="num">05</span>
         <span class="bar"></span>
         <span>Get in Touch</span>
       </div>
@@ -1262,7 +1416,7 @@
     });
   }, { threshold: 0.12 });
 
-  document.querySelectorAll('.about, .work, .tools, .contact').forEach(sec => {
+  document.querySelectorAll('.about, .experience, .work, .tools, .contact').forEach(sec => {
     sec.style.opacity = '0';
     sec.style.transform = 'translateY(30px)';
     sec.style.transition = 'opacity 1s ease, transform 1s cubic-bezier(0.2, 0.8, 0.2, 1)';
